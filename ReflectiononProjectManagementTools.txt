@@ -1,0 +1,14 @@
+Reflection on Project Management Tools:
+
+GitHub's project management features—Milestones, Issues, and Project Boards—help teams work together and stay organized.
+
+Milestones let teams set goals and deadlines by grouping related tasks, making it easy to track progress.
+
+Issues are used to report bugs, suggest new features, or discuss ideas, keeping everything in one place.
+Teams can assign issues to specific people, add labels to organize them, and link them to code changes for easy tracking.
+
+Project Boards provide a visual way to manage tasks, using columns like "To Do," "In Progress," and "Done."
+This helps teams see the status of tasks and share responsibilities clearly.
+
+These tools make communication smoother, reduce confusion, and keep projects on track. Since GitHub combines these tools
+with version control, teams can manage tasks and development in one place, making collaboration simple and effective.
