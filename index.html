@@ -99,7 +99,37 @@
             color: #7f8c8d;
             line-height: 1.5;
         }
-
+        #contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        #contact button {
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+        #contact button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        .contact-info {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-info p {
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #555;
+        } 
        
     </style>
   </head>
@@ -148,14 +178,25 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <h3>Email: hrupayandas</h3>
-        <h3>Phone: 7086665172</h3>
+        <button onclick="toggleContactInfo()">Show Contact Info</button>
+        <div class="contact-info" id="contact-info">
+            <p>Email: hrupayandas@gmail.com</p>
+            <p>Phone: 7086665172</p>
+        </div>
     </section> 
 
      
   </body>
   <script >
-     
+     function toggleContactInfo() {
+            var contactInfo = document.getElementById("contact-info");
+            if (contactInfo.style.display === "none" || contactInfo.style.display === "") {
+                contactInfo.style.display = "block";
+            } else {
+                contactInfo.style.display = "none";
+            }
+        }
+
         function highlightSkill(skill) {
             skill.style.backgroundColor = "#ecf0f1";
         }
